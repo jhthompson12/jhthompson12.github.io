@@ -1,11 +1,9 @@
----
 layout: post
 title: "Baby-SpiCroft"
 date: 2022-03-26 09:57:05 -0400
 tags: raspberry-pi open-source baby-monitor smart-speaker Picroft Mycroft Infrared WebRTC
----
 
-# Baby SpiCroft: A Raspberry Pi Smart Speaker Baby Monitor Built on Open Source
+# Baby SpiCroft (bā′bē spī krôft):A Raspberry Pi Smart Speaker Baby Monitor Built on Open Source
 
 In the months leading up to the birth of our first child, my partner and
 I were beginning to nest. She was busy procuring critical, practical
@@ -224,9 +222,11 @@ media stream between the client's browser and the Baby SpiCroft.
     connection.
 2.  When the user's browser connects to Baby SpiCroft it receives a
     janus.js file, which is the
-    [Janus JavaScript library](https://janus.conf.meetecho.com/docs/JS.html). This file
+    [Janus](https://janus.conf.meetecho.com/docs/JS.html)
+    [Java](https://janus.conf.meetecho.com/docs/JS.html)[S](https://janus.conf.meetecho.com/docs/JS.html)[cript
+    library](https://janus.conf.meetecho.com/docs/JS.html). This file
     contains all the logic needed to establish the streaming connection
-    between the browser and Baby SpiCroft.
+    between Baby SpiCroft and the browser.
 3.  Janus Core and the Janus Streaming Plugin negotiate a WebRTC
     connection between the browser and the Janus Streaming plugin, and
     \*Abracadabra!\* you have a live, low-latency audio / video feed of
@@ -242,3 +242,5 @@ On the late nights banging my head against the keyboard trying to
 understand the many layers of Janus and waiting on the baby to get here
 things could get lonely.. So I figured a virtual assistant that disobeys
 my orders and spies on my
+
+![](Pictures/10000001000007AA000004EAD8B4261209B9F663.png)
