@@ -35,8 +35,6 @@ everything with a one liner. My hope is that this article will give
 others an outline to follow or, at the very least, something to point
 and laugh at.
 
-![Single line diagram showing the hard and software used.](/assets/BabySpiCroft_Diagram.png)
-
 ## "Why not just buy a baby monitor?"
 
 You know what? fair question! In short, I'm hard-headed, cheap, a little
@@ -226,7 +224,7 @@ media stream between the client's browser and the Baby SpiCroft.
     connection.
 2.  When the user's browser connects to Baby SpiCroft it receives a
     janus.js file, which is the
-    [Janus JavaScript](https://janus.conf.meetecho.com/docs/JS.html). This file
+    [Janus JavaScript library](https://janus.conf.meetecho.com/docs/JS.html). This file
     contains all the logic needed to establish the streaming connection
     between the browser and Baby SpiCroft.
 3.  Janus Core and the Janus Streaming Plugin negotiate a WebRTC
