@@ -117,8 +117,7 @@ product.
 This is the hardware I ended up using, though there is plenty of room
 for variation.
 
-[Raspberry Pi
-4B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/): The
+[Raspberry Pi 4B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/): The
 4B has enough power to run the smart speaker and baby monitor software
 simultaneously with plenty of overhead left over for other things. If
 you're just interested in running either the baby monitor **or** the
