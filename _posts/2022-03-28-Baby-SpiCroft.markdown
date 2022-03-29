@@ -1,7 +1,9 @@
+---
 layout: post
 title: "Baby-SpiCroft"
 date: 2022-03-26 09:57:05 -0400
 tags: raspberry-pi open-source baby-monitor smart-speaker Picroft Mycroft Infrared WebRTC
+---
 
 # Baby SpiCroft (bā′bē spī krôft):A Raspberry Pi Smart Speaker Baby Monitor Built on Open Source
 
