@@ -1,9 +1,7 @@
----
 layout: post
 title: "Baby-SpiCroft"
 date: 2022-03-26 09:57:05 -0400
 tags: raspberry-pi open-source baby-monitor smart-speaker Picroft Mycroft Infrared WebRTC
----
 
 # Baby SpiCroft (bā′bē spī krôft):A Raspberry Pi Smart Speaker Baby Monitor Built on Open Source
 
@@ -26,6 +24,8 @@ solution. Getting to the final product was not all that expensive, but,
 for a novice like myself, it was very time consuming. Most importantly,
 I learned **a lot** along the way, and, come on, we all know that the
 real gift is not cold hard cash, it's warm soft knowledge.
+
+![Single line diagram of the hardware and software used in this project.](/assets/BabySpiCroft_Diagram.png)
 
 Anyways, in the rest of this article I will try to justify my ludicrous
 actions and provide a description for those anyone who would like to do
@@ -244,5 +244,3 @@ On the late nights banging my head against the keyboard trying to
 understand the many layers of Janus and waiting on the baby to get here
 things could get lonely.. So I figured a virtual assistant that disobeys
 my orders and spies on my
-
-![](Pictures/10000001000007AA000004EAD8B4261209B9F663.png)
