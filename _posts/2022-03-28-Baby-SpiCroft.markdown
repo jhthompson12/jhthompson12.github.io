@@ -35,6 +35,8 @@ everything with a one liner. My hope is that this article will give
 others an outline to follow or, at the very least, something to point
 and laugh at.
 
+![Single line diagram showing the hard and software used.](/assets/BabySpiCroft_Diagram.png)
+
 ## "Why not just buy a baby monitor?"
 
 You know what? fair question! In short, I'm hard-headed, cheap, a little
@@ -224,11 +226,9 @@ media stream between the client's browser and the Baby SpiCroft.
     connection.
 2.  When the user's browser connects to Baby SpiCroft it receives a
     janus.js file, which is the
-    [Janus](https://janus.conf.meetecho.com/docs/JS.html)
-    [Java](https://janus.conf.meetecho.com/docs/JS.html)[S](https://janus.conf.meetecho.com/docs/JS.html)[cript
-    library](https://janus.conf.meetecho.com/docs/JS.html). This file
+    [Janus JavaScript](https://janus.conf.meetecho.com/docs/JS.html). This file
     contains all the logic needed to establish the streaming connection
-    between Baby SpiCroft and the browser.
+    between the browser and Baby SpiCroft.
 3.  Janus Core and the Janus Streaming Plugin negotiate a WebRTC
     connection between the browser and the Janus Streaming plugin, and
     \*Abracadabra!\* you have a live, low-latency audio / video feed of
@@ -244,5 +244,3 @@ On the late nights banging my head against the keyboard trying to
 understand the many layers of Janus and waiting on the baby to get here
 things could get lonely.. So I figured a virtual assistant that disobeys
 my orders and spies on my
-
-![](Pictures/10000001000007AA000004EAD8B4261209B9F663.png)
