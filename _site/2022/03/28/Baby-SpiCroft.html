@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Baby Spicroft | Joseph Joe Thompson</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Baby Spicroft" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="layout: post title: “Baby-SpiCroft” date: 2022-03-26 09:57:05 -0400 tags: raspberry-pi open-source baby-monitor smart-speaker Picroft Mycroft Infrared WebRTC" />
+<meta property="og:description" content="layout: post title: “Baby-SpiCroft” date: 2022-03-26 09:57:05 -0400 tags: raspberry-pi open-source baby-monitor smart-speaker Picroft Mycroft Infrared WebRTC" />
+<link rel="canonical" href="http://localhost:4000/2022/03/28/Baby-SpiCroft.html" />
+<meta property="og:url" content="http://localhost:4000/2022/03/28/Baby-SpiCroft.html" />
+<meta property="og:site_name" content="Joseph Joe Thompson" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-03-28T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Baby Spicroft" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-03-28T00:00:00-04:00","datePublished":"2022-03-28T00:00:00-04:00","description":"layout: post title: “Baby-SpiCroft” date: 2022-03-26 09:57:05 -0400 tags: raspberry-pi open-source baby-monitor smart-speaker Picroft Mycroft Infrared WebRTC","headline":"Baby Spicroft","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/03/28/Baby-SpiCroft.html"},"url":"http://localhost:4000/2022/03/28/Baby-SpiCroft.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=659552594f26a04cd8553c6d7099bf2635ad598d">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Baby Spicroft</h1>
+      <h2 class="project-tagline">A site to post articles about projects</h2>
+      
+        <a href="https://github.com/jhthompson12/jhthompson12.github.io" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <p>layout: post
+title: “Baby-SpiCroft”
+date: 2022-03-26 09:57:05 -0400
+tags: raspberry-pi open-source baby-monitor smart-speaker Picroft Mycroft Infrared WebRTC</p>
+
+<h1 id="baby-spicroft-bābē-spī-krôfta-raspberry-pi-smart-speaker-baby-monitor-built-on-open-source">Baby SpiCroft (bā′bē spī krôft):A Raspberry Pi Smart Speaker Baby Monitor Built on Open Source</h1>
+
+<p>In the months leading up to the birth of our first child, my partner and
+I were beginning to nest. She was busy procuring critical, practical
+items like clothing, bottles, and toys; I, on the other hand, was busy
+selfishly scheming a new personal project that would consume the little
+precious free-time that I had left before the due date. We were quickly
+checking items off of our list and arrived at a baby monitor. After
+looking in to the market, I was not very enthused by the options
+available on the market (more about why in the next section). I was just
+starting to get comfortable with Raspberry Pi, GNU/Linux, and other
+aspects of FOSS. I smugly thought to myself, “Pshh, I can make a better
+baby monitor than any of this crap for a fraction of the price!”…
+Alas, dear reader, in hindsight, I do not think that I made out like a
+bandit with the world’s greatest baby monitor in one hand, and a wad of
+spare cash and time in the other; but, I am very happy with the end
+result and am glad that I refused to settle for an off the shelf
+solution. Getting to the final product was not all that expensive, but,
+for a novice like myself, it was very time consuming. Most importantly,
+I learned <strong>a lot</strong> along the way, and, come on, we all know that the
+real gift is not cold hard cash, it’s warm soft knowledge.</p>
+
+<p><img src="/assets/BabySpiCroft_Diagram.png" alt="Single line diagram of the hardware and software used in this project." /></p>
+
+<p>Anyways, in the rest of this article I will try to justify my ludicrous
+actions and provide a description for those anyone who would like to do
+something similar. Unfortunately I am not currently planning on creating
+step-by-step documentation or a ready-made repo for installing
+everything with a one liner. My hope is that this article will give
+others an outline to follow or, at the very least, something to point
+and laugh at.</p>
+
+<h2 id="why-not-just-buy-a-baby-monitor">“Why not just buy a baby monitor?”</h2>
+
+<p>You know what? fair question! In short, I’m hard-headed, cheap, a little
+paranoid, and have the heart of a hobbyist. If you aren’t interested in
+building something and the idea of banging your head against the wall
+for a few hours per day doesn’t sound appealing, then just buying one is
+the right answer. However, I think the final Baby SpiCroft is pretty
+kick-ass and there’s also a lot of room for improvement and additional
+features, so if building stuff is your thing and you have a baby on the
+way, I would highly recommend building your own baby monitor. The
+free-and-open-source tools are plentiful and robust, the hardware is
+relatively cheap, and the possibilities are endless.</p>
+
+<p>Besides wanting to do it because “why not”, in my opinion, the value
+proposition for off-the-shelf baby monitors is not that enticing.
+Obviously, some baby monitors are better than others, but my
+dissatisfaction with each monitor can be attributed to some combination
+of the following shortcomings:</p>
+
+<ul>
+  <li><strong>A perceived lack of privacy and security</strong>: Many monitors are
+internet connected and require a proprietary app to view the video
+stream. One benefit of this is that you can usually use these
+anywhere, even when you are away from home. I’m not a fan of
+internet connected baby monitors because of the perceived risks
+associated with my baby’s video and audio feed being routed through
+a third-party to get to me. Besides, proprietary IoT apps usually
+suck.</li>
+  <li><strong>Lack of convenience and versatility</strong>: Radio-based baby monitors
+avoid the previous downfall, but these require a dedicated receiver
+with a screen and battery that needs to be looked after, carried
+around the house, charged, etc.</li>
+  <li><strong>Single use electronics</strong>: I’m not talented enough to re-purpose
+off the shelf baby monitor components for other things, so once
+these things are no longer needed, they become e-waste. And that’s
+<strong>if</strong> the components last long enough to be retired, in reality,
+these are cheap components that are liable to break for whatever
+reason.</li>
+</ul>
+
+<p>These are the mental gymnastics I’ve used to justify the time that I’ve
+sunk in to this thing, if you’re feeling as flexible as I am, then lets
+move on to discussing what my ideal baby monitor <em>should</em> have.</p>
+
+<h1 id="what-do-i-want-in-a-baby-monitor">What do I want in a baby monitor?</h1>
+
+<p>My requirements are essentially just basic baby monitor functionality:</p>
+
+<p>Minimum Requirements:</p>
+
+<ul>
+  <li>Runs on a Raspberry Pi 3 or 4 without issue.</li>
+  <li>Real-time audio and video feed: 1 second or less latency.</li>
+  <li>Infrared camera with infrared source to see baby in the complete
+darkness.</li>
+  <li>Communicate over the local WiFi network.</li>
+  <li>Any device with a web browser should be able to connect. It should
+support multiple devices connected concurrently.</li>
+  <li>The connection should be robust: I should be able to connect with my
+phone, plug it in bedside, and hear the stream throughout the night.</li>
+</ul>
+
+<p>There are also some nice-to-haves features that, I believe, make the
+Baby SpiCroft better than even the most bougie baby monitor at your
+local Babies-R-Us:</p>
+
+<p>Nice-to-Haves:</p>
+
+<ul>
+  <li>Run a smart speaker program on the same hardware: I have some
+bookshelf speakers and there’s already a microphone. Can the
+hardware run the baby monitor <strong>and</strong> some open-source smart speaker
+software, like <a href="https://github.com/MycroftAI/enclosure-picroft">Mycroft’s Picroft
+project</a>?</li>
+  <li>Relatively portable: It can be unplugged and moved elsewhere in the
+house or even taken on vacation and used on a different WiFi
+network.</li>
+  <li>Act as a Spotify player to allow us to easily play music through the
+speakers without a bluetooth connection.</li>
+</ul>
+
+<p>With these goals in mind, I began searching for the hardware along with
+any existing software projects or tools that would support the final
+product.</p>
+
+<h1 id="hardware">Hardware</h1>
+
+<p>This is the hardware I ended up using, though there is plenty of room
+for variation.</p>
+
+<p><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi
+4B</a>: The
+4B has enough power to run the smart speaker and baby monitor software
+simultaneously with plenty of overhead left over for other things. If
+you’re just interested in running either the baby monitor <strong>or</strong> the
+smart speaker software, the older 3B is perfectly capable. In my
+experience it was maxed out when running Picroft to the point where it
+was not usable for anything else, hence upgrading to the 4B.</p>
+
+<p><a href="https://www.seeedstudio.com/Raspberry-Pi-Infrared-Camera-Module.html">Infrared Camera with Infrared
+LEDs</a>:
+Each LED is rated at 3W, so make sure you’re using a proper 3 amp power
+supply for your Pi. The LEDs put off a faint visible red glow, but they
+aren’t intrusive or distracting.</p>
+
+<p><a href="https://shop.inux3d.com/en/raspberry-pi/35-raspberrypi-infrared-camera-case.html">Infrared Camera Case with Ball
+Swivel</a>:
+If you have a 3D printer, you could probably make one yourself. I do
+not, so I went with this one from INUX3D. It took a long time to get
+here from Eastern Europe, but I am very happy with the quality and
+design.</p>
+
+<p><a href="http://www.samsontech.com/samson/products/microphones/usb-microphones/gomic/">Samson Go Mic USB Condenser
+Microphone</a>:
+Any USB microphone should work. This one has good audio quality, a long
+cable, and a nice little integrated clip / stand that makes it easy to
+mount / place next to the crib.</p>
+
+<p><a href="https://www.edifier.com/int/product-r1280db.html">Edifier R1280DB Bookshelf
+Speakers</a>: Speakers
+are only necessary for the smart speaker part of the Baby SpiCroft.
+These are connected to the to the Pi via the headphone jack. It is
+critical to get speakers that do not automatically go to sleep after
+some time without input (which seems to be relatively common common).
+The first sound bar I purchased did this which made them unusable for
+this use case. I’m fairly happy with these Edifiers. I will say, their
+website has some fantastic marketing, so I was a little disappointed
+with the build quality, but for they do sound pretty good for the price.</p>
+
+<p>Raspberry Pi Case: Heat sinks and or a fan are a welcomed addition. I
+went with <a href="https://www.c4labs.com/product/zebra-4-interior-fan-case-raspberry-pi-4/">this
+one</a>.</p>
+
+<p><a href="https://smile.amazon.com/VELCRO-Brand-Sticky-Fasteners-Perfect/dp/B00006IC2M">Velcro With Adhesive
+Backing</a>:
+Used to mount the infrared camera case to the Raspberry Pi housing.</p>
+
+<p><a href="https://smile.amazon.com/gp/product/B072HV6NLB/">Magnets</a> and <a href="https://smile.amazon.com/gp/product/B007Y7EWRO">Double
+Sided Tape</a>: These were
+used to set up camera mounting stations around the house.</p>
+
+<h1 id="software">Software</h1>
+
+<p>While searching around I came across a few projects with similar goals,
+create a baby monitor with a Raspberry Pi and infrared camera. Some of
+these provided a lot of great ideas and inspiration. Specifically, this
+<a href="https://github.com/leerikss/baby-monitor">Baby-Monitor</a> <a href="https://github.com/leerikss/baby-monitor">project by
+Leif Erickson</a>
+(“hinga-denga-dergan”) was incredibly helpful in getting me started. The
+baby monitor half of the Baby SpiCroft is very similar to Leif’s
+project, with some simplifications made. Here’s an overview of the
+software used with my best attempt at explaining what they do, I assure
+you I will not do these projects justice, so please go check them out
+for yourself.</p>
+
+<h2 id="baby-monitor-putting-the-baby-spi-in-baby-spicroft">Baby Monitor: Putting the “Baby Spi” in “Baby SpiCroft”</h2>
+
+<p>First I’ll cover the software needed to get just the baby monitor up and
+running.</p>
+
+<p><a href="https://www.alsa-project.org/wiki/Main_Page">Advanced Linux Sound Architecture
+(ALSA)</a> and
+<a href="https://alsa.opensrc.org/Dsnoop">Dsnoop</a>: ALSA is part of the Linux
+kernel and enables applications to interact with with audio devices,
+like our USB microphone. By default, only one application can connect to
+one audio device, so we use the Dsnoop plugin to enable multiple
+applications (e.g. the baby monitor and smart speaker application) to
+listen to the same microphone.</p>
+
+<p><a href="https://gstreamer.freedesktop.org/">G</a><a href="https://gstreamer.freedesktop.org/">S</a><a href="https://gstreamer.freedesktop.org/">treamer</a>:
+Gstreamer can do much, much more than I could ever comprehend, so I will
+just cover how it’s used here. GStreamer grabs the video and audio
+signals from our input devices and creates streams (h264 for video, Opus
+for audio) which are posted to separate ports. The user’s browser will
+eventually connect to these streams.</p>
+
+<p><a href="https://nginx.org/en/">Nginx</a>: When the user’s browser first reaches
+out to Baby SpiCroft, i.e. navigates to https://&lt;IP_Address_of_the_Pi&gt;,
+to connect to the video stream, Nginx is there to provide them with the
+HTML, CSS, and JavaScript files so that that the browser can begin to
+render the page and establish a <a href="https://webrtc.org/">WebRTC</a>
+connection.</p>
+
+<p><a href="https://janus.conf.meetecho.com/docs/">Janus WebRTC Server</a>: Janus is
+doing the bulk of the heavy lifting here. There are multiple components
+of Janus that are working together to establish and maintain the WebRTC
+media stream between the client’s browser and the Baby SpiCroft.</p>
+
+<ol>
+  <li><a href="https://janus.conf.meetecho.com/docs/group__core.html">Janus Core</a>,
+along with the <a href="https://janus.conf.meetecho.com/streamingtest.html">Janus Streaming
+plugin</a>, is
+running on the Raspberry Pi waiting for a browser to request a
+connection.</li>
+  <li>When the user’s browser connects to Baby SpiCroft it receives a
+janus.js file, which is the
+<a href="https://janus.conf.meetecho.com/docs/JS.html">Janus</a>
+<a href="https://janus.conf.meetecho.com/docs/JS.html">Java</a><a href="https://janus.conf.meetecho.com/docs/JS.html">S</a><a href="https://janus.conf.meetecho.com/docs/JS.html">cript
+library</a>. This file
+contains all the logic needed to establish the streaming connection
+between Baby SpiCroft and the browser.</li>
+  <li>Janus Core and the Janus Streaming Plugin negotiate a WebRTC
+connection between the browser and the Janus Streaming plugin, and
+*Abracadabra!* you have a live, low-latency audio / video feed of
+baby in your browser!</li>
+</ol>
+
+<p>That covers the software needed to get the baby monitor up and running.
+Next we’ll briefly talk about the software that breathes artificial life
+into our baby monitor with an open-source smart speaker project.</p>
+
+<h2 id="my-main-man-mycroft">My Main Man, Mycroft</h2>
+
+<p>On the late nights banging my head against the keyboard trying to
+understand the many layers of Janus and waiting on the baby to get here
+things could get lonely.. So I figured a virtual assistant that disobeys
+my orders and spies on my</p>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/jhthompson12/jhthompson12.github.io">jhthompson12.github.io</a> is maintained by <a href="https://github.com/jhthompson12">jhthompson12</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
