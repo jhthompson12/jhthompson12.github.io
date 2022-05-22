@@ -1,4 +1,4 @@
-Hello and welcome to my personal website! My name is Joe Thompson.
+Hello and welcome to my personal website! My name is Joe Thompson A.K.A the Mash Tinging... the sash dinging... the trash bringing... No, the Hash Slinging Scripter.
 
 I am an engineer, researcher, and aspiring developer with a passion for learning and a fascination with free and open source software. I have a MS in Electrical Engineering from Georgia Tech and currenlty work as a reasearcher at the [Electric Power Research Institute (EPRI)](https://www.epri.com/) in the [Energy Storage and Distributed Generation program](https://www.epri.com/research/programs/053125). This site is meant to showcase my favorite personal and professional projects and accomplishments.
 
