@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Joe Thompson
-subtitle: Father, Outdoors Enthusiest, Engineer, and Programmer 
+subtitle: Father, Outdoors Enthusiast, Engineer, and Programmer 
 cover-img: [
 	"assets/Hulk_Summit.jpg": "Incredible Hulk Summit, Hoover Wilderness, CA. 2020.",
 	"assets/Black_Canyon.jpg": "Black Canyon, CO. 2020.",
@@ -11,7 +11,7 @@ cover-img: [
 ]
 ---
 
-I am an engineer, researcher, and aspiring developer with a passion for learning and a fascination with free and open source software. I have an MS in Electrical and Computer Engineering from Georgia Tech and currenlty work as a reasearcher at the [Electric Power Research Institute (EPRI)](https://www.epri.com/) in the [Energy Storage and Distributed Generation program](https://www.epri.com/research/programs/053125). This site exists to share some of my favorite personal and professional projects and accomplishments.
+I am an engineer, researcher, and aspiring developer with a passion for learning and a fascination with free and open source software. I have an MS in Electrical and Computer Engineering from Georgia Tech and currently work as a reasearcher at the [Electric Power Research Institute (EPRI)](https://www.epri.com/) in the [Energy Storage and Distributed Generation program](https://www.epri.com/research/programs/053125). This site exists to share some of my favorite personal and professional projects and accomplishments.
 
 # Personal Projects
 ## Baby SpiCroft - A Raspberry Pi Baby Monitor and Smart Speaker Built on Open Source
