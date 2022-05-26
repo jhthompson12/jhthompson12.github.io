@@ -237,6 +237,8 @@ media stream between the client's browser and the Baby SpiCroft.
     _Abracadabra!_ you have a live, low-latency audio / video feed of
     baby in your browser!
 
+![A screenshot taken from my phone. The video is pretty bright, but there is almost no visible light in the room.](/assets/Baby_Monitor_View.png)
+
 That covers the software needed to get the baby monitor up and running.
 Next we'll briefly talk about the software that breathes artificial life
 into our baby monitor with an open-source smart speaker project.
