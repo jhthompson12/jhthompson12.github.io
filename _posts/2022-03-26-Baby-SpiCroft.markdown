@@ -1,8 +1,12 @@
 ---
 title: Baby-SpiCroft
+layout: post
 subtitle: A Raspberry Pi Smart Speaker Baby Monitor Built on Open Source
 date: 2022-03-26 09:57:05 -0400
 tags: raspberry-pi open-source baby-monitor smart-speaker Picroft Mycroft Infrared WebRTC
+cover-img: "assets/Monitor_1.jpg"
+gh-repo: "jhthompson12/BabySpiCroft-Setup-Files"
+gh-badge: "star"
 ---
 
 In the months leading up to the birth of our first child, my partner and
@@ -82,7 +86,7 @@ move on to discussing what my ideal baby monitor *should* have.
 
 My requirements are essentially just basic baby monitor functionality:
 
-Minimum Requirements:
+### Minimum Requirements:
 
 -   Runs on a Raspberry Pi 3 or 4 without issue.
 -   Real-time audio and video feed: 1 second or less latency.
@@ -94,11 +98,11 @@ Minimum Requirements:
 -   The connection should be robust: I should be able to connect with my
     phone, plug it in bedside, and hear the stream throughout the night.
 
-There are also some nice-to-haves features that, I believe, make the
+There are also some nice-to-have features that, I believe, make the
 Baby SpiCroft better than even the most bougie baby monitor at your
 local Babies-R-Us:
 
-Nice-to-Haves:
+### Nice-to-Haves:
 
 -   Run a smart speaker program on the same hardware: I have some
     bookshelf speakers and there's already a microphone. Can the
@@ -170,6 +174,8 @@ Used to mount the infrared camera case to the Raspberry Pi housing.
 [Magnets](https://smile.amazon.com/gp/product/B072HV6NLB/) and [Double
 Sided Tape](https://smile.amazon.com/gp/product/B007Y7EWRO): These were
 used to set up camera mounting stations around the house.
+
+![Here's what the final package looks like attached underneath a bookshelf near the crib.](/assets/Monitor_3.jpg)
 
 # Software
 
@@ -254,12 +260,14 @@ My experience with Mycroft has been pretty good so far. It's not as hands off as
 * Home Assistant skill: We use this to turn a nursery lamp on/off with a little smart plug and a Home Assistant instance that's running on a NAS system. 
 
 # Installation
-Detailed steps and commands can be found in my ["Baby SpiCroft Setup File" project on GitHub](https://github.com/jhthompson12/BabySpiCroft-Setup-Files). 
+Detailed steps and commands can be found in the ["Baby SpiCroft Setup File" project on GitHub](https://github.com/jhthompson12/BabySpiCroft-Setup-Files). 
 
 
 # Conclusion
 I had a lot of fun putting this together and the final product turned out to be surprisingly reliable and useful. Hopefully someone else can make some use of this recipe or create something even cooler. 
 
 Thank you for taking the time to read this and stay tuned for more projects and posts in the future! 
+
+![Final product!](/assets/Monitor_2.jpg)
 
 **P.S.** If you're looking to add another bell or whistle to this contraption, might I recommend my [Baby Tracker App project](https://github.com/jhthompson12/Baby_Tracker_App) which runs alongside Baby SpiCroft and serves up a web app on the local network which allows you to track important baby events throughout the day. We found this to be very helpful throughout the first year to keep track of trends in eating, sleeping, and pottying. 

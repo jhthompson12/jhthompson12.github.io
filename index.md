@@ -8,7 +8,6 @@ cover-img: [
 	"assets/Kor-Ingalls.jpg": "Castleton Tower, UT. 2020.",
 	# "assets/Generator_Crack.jpg": "Generator Crack, Yosemite Valley, CA. 2019.",
 	"assets/Mathes_Crest2.jpg": "Mathes Crest, Yosemite, CA. 2019.",
-	"assets/Yosemite_View.jpg": "Yosemite, CA. 2019.",
 	"assets/Cathedral_Peak.jpg": "Yosemite, CA. 2019.",
 ]
 ---
