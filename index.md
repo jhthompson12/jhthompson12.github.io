@@ -22,6 +22,6 @@ A low-latency, WebRTC baby monitor and open source smart speaker ([Picroft](http
 This project was motivated by the birth of our first child and was a blast to put together! Check out [this blog post for more information](2022-03-26-Baby-SpiCroft) or you can jump to the [install instructions on GitHub](https://github.com/jhthompson12/BabySpiCroft-Setup-Files).
 
 ### The Baby Tracker Web App
-A Python-based web app built with [Plotly Dash](https://dash.plotly.com/) that helps weary and paranoid parents easily track critical baby functions throughout the day. Things like sleep times, feeding details, and potty events can be input and viewed via a web browser. 
+A Python-based web app built with [Plotly Dash](https://dash.plotly.com/) that helps weary and paranoid parents easily track critical baby functions throughout the day. Things like sleep times, feeding details, and potty events can be input and viewed via a web browser. Check out the code and install instructions in [this Github repo](https://github.com/jhthompson12/Baby_Tracker_App). 
 
 I know there's probably tons of apps that will track these things for you, but this is customizable and keeps you in control of your baby's sensitive poo data. I have this running on the [Baby SpiCroft](2022-03-26-Baby-SpiCroft) device mentioned above and it has been surprisingly helpful with keeping track of baby's development. 
