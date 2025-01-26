@@ -1,16 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+# subtitle: Why you'd want to go on a date with me
+cover-img: [
+    "assets/img/background-photos/Mickeys_Beach.jpg": "Mickey's Beach, CA. 2019.",
+]
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I am an engineer, researcher, and aspiring developer with a passion for learning and a fascination with free and open source software. I have a Masters in Electrical and Computer Engineering from Georgia Tech and currently work as a researcher at the [Electric Power Research Institute (EPRI)](https://www.epri.com/) in the [Energy Storage and Distributed Generation program](https://www.epri.com/research/programs/053125).
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+In my free time you can catch me outside hiking, biking or climbing, or inside coding up solutions to all of life's minor inconveniences.
