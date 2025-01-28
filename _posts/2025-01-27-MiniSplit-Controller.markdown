@@ -7,8 +7,6 @@ tags: ductless-mini-split esp32 wemos esphome mitsubishi heat-pump
 cover-img: "assets/img/heat-pump/unit-no-cover.jpg"
 ---
 
-## Heat Pumps Are Really Cool
-
 We recently added two rooms onto our house and instead of appending these rooms onto our home's [traditional forced-air centralized HVAC system](https://en.wikipedia.org/wiki/Forced-air) we opted for a two zone [ductless mini split heat pump system](https://en.wikipedia.org/wiki/Air_conditioning#Mini-split_and_multi-split_systems) because they are super cool. :sunglasses:
 
 I absolutely love using [Home Assistant](https://www.home-assistant.io/) to locally integrate and control the various "smart" devices throughout the house, and was excited to have two new [climate entities](https://developers.home-assistant.io/docs/core/entity/climate/) (i.e. the two new wall units) to add to our Home Assistant setup. 
