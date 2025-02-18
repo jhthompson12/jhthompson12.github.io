@@ -71,7 +71,7 @@ Since this was going to be tucked up into the wall unit's housing I covered the 
 #### Firmware
 We can now use [ESPHome](https://esphome.io/) + [esphome-mitsubishiheatpump](https://github.com/geoffdavis/esphome-mitsubishiheatpump) to build and flash the firmware to our fresh ESP32. 
 
-[ESPHome](https://esphome.io/) is an incredible tool that allows anyone to quickly build custom firmware for ESP32-based devices. With ESPHome building complex, custom firmware is done through a single YAML file where one specifies all the important thjings needed to build the firmware for your specific use case. 
+[ESPHome](https://esphome.io/) is an incredible tool that allows anyone to quickly build custom firmware for ESP32-based devices. With ESPHome building complex, custom firmware is done through a single YAML file where one specifies all the important things needed to build the firmware for your specific use case. 
 
 The specifics of the firmware flashing are out of scope for this article. There are many ways to skin this cat, but the process I used looks roughly like this:
 - **Initial Firmware Flash**: First flash the brand new ESP32 (Lolin S2 Mini) with a minimal ESPHome firmware using [ESPHome's Web Flasher tool](https://web.esphome.io/). This allows us to get the ESP32 connected to my WiFi network and my local ESPHome server where I can later [flash firmware updates over-the-air](https://esphome.io/components/ota/esphome.html). 
@@ -213,7 +213,7 @@ If you have a Mitsubishi heat pump I would highly recommend checking out this si
 Just like that my two "dumb" heat pumps were now "smart" and locally controllable with around $22 worth of hardware. 
 
 To recap here are some of the things that are now possible: 
-- Heat pumps are now integrated into Home Assistant and no cloud connectoins were needed :cloud::no_good:
+- Heat pumps are now integrated into Home Assistant and no cloud connections were needed :cloud::no_good:
 - I can now see the heat pump's room temperature reading :thermometer::eyes:
 - The little wall remote still works. When it is used to chamge the wall unit's temperature setpoint the ESP32 can see those changes which are reflected in Home Assisstant. Although, because the remote's communication only works in one direction it will not updates it's little display when setpoint changes are initiated from the ESP32 :control_knobs::man_shrugging:
 
